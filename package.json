@@ -5,13 +5,15 @@
   "dependencies": {
     "react": "next",
     "react-dom": "next",
-    "react-scripts": "2.1.3"
+    "react-scripts": "2.1.3",
+    "surge": "^0.20.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:surge": "mv build/index.html build/200.html && surge build https://react-hooks-todo.surge.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
